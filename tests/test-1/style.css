@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(16, calc(100vw/16));
+    grid-auto-rows: calc(100vw/16);
+}
+
+#block-1 {
+    grid-column: 3/15;
+    grid-row: 5/15;
+    box-sizing: border-box;
+    border-width: 30px;
+
+    background-color: blue;
+    border-style: solid;
+    border-color: red;
+    outline: 200px solid rgb(24, 18, 18);
+
+    filter: blur(10px);
+
+}
